@@ -1,5 +1,6 @@
 package com.springjpa.controller;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -57,7 +58,7 @@ public class MyController {
 	 */
 	@RequestMapping("/add_student")
 	@Deprecated
-	public String addStudent(ModelMap modal,@RequestParam("name") String name, @RequestParam("gpa") Integer gpa){
+	public String addStudent(ModelMap modal,@RequestParam("name") String name, @RequestParam("gpa") BigDecimal gpa){
 		// save a single Customer
 		modal.addAttribute("title","CRUD Example");
 		
